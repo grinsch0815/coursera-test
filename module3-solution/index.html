@@ -1,94 +1,90 @@
-body{
-
-	background-color:#5C080E;
-}
-
-#header-nav{
-background-color: #84ACCE;
-border-radius:0;
-border:0;
-
-}
-
-.navbar-brand{
-padding-top: 15px;
-
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration: none;
-}
-
-.navbar-brand h1{
-	font-family: Arial, serif;
-	color: #5C080E;
-	font-size:1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
-	line-height: 0.75;
-
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-
-	border: 1px solid #5C080E;
-	color: white;
-}
- .navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:focus    {
-
-	  
-	background-color: yellow;
-}
- 
-
-#navlist a  {
-	font-size: 1.3em;
-	 
-	color:#5C080E;
-	text-align: center;
-}
-
-hr.visible-xs{
-	border-top: 1px solid white;
-	width: 200px;
-}
- 
-
-#navlist a:hover  {
-	color: yellow;
-	
-	  
-	 
-}
-
-.section-container{
-	padding-top: 5px;
-	background-color: white;
-	opacity: .6;
-}
-
-#menu-header{
-	
-	color: white;
-	text-shadow: 1px 1px 1px #222;
-}
-
-.content{
-opacity: 1;
-padding: 15px;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {  }
+    <title>Boostrap Starter Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+<header>
+<nav id="header-nav" class="navbar navbar-default">
+<div class="container">
+<!-- header   -->
+    <div class="navbar-header">
+      <div class="navbar-brand">
+       <a  href="#"><h1>Food, LLC</h1></a>
+     </div>
+         <!--  <img alt="Brand" src="...">      ,-->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button> <!-- brand   -->
+         
+    </div> <!-- header end  -->
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {  }
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul id="navlist" class="nav navbar-nav navbar-right visible-xs">
+        <li ><a href="#chicken">Chicken <span class="sr-only">(current)</span></a>
+        <hr class="visible-xs">
+        </li>
+       
+        <li><a href="#beef">Beef</a>    <hr class="visible-xs"></li>
+        <li><a href="#sushi">Sushi</a> </li>
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {  }
+       
+
+      </ul>
+
+
+
+    </div>
+
+
+</div>
+</nav>
+
+
+</header>
+
+<div class="container">
+<h2 id="menu-header" class="text-center">Our Menu</h2>
+<row col-lg-12 col-md-12 col-xs-12> 
+<section class="section-container" id=chicken-container>
+<div class="section-header text-center" id="chicken-title"><h3> Chicken</h3><div>
+<div class="content text-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lacinia nunc, non aliquam urna. Nullam aliquet condimentum neque, nec interdum purus tempor sit amet. Sed nec arcu velit. Duis eleifend pharetra porta. In et placerat diam. Nunc ac ligula eu tellus mollis ultrices non sed risus. Praesent sagittis justo eget porttitor accumsan. Nulla accumsan tempus metus, in semper tortor ullamcorper feugiat. Etiam ornare ut magna ut tristique. Mauris et condimentum sem. Cras hendrerit elit volutpat erat placerat, non sodales augue lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec varius leo nunc, sit amet ornare orci elementum in. Integer id massa erat.
+
+Curabitur id turpis tellus. Ut vitae augue pharetra risus bibendum convallis dignissim vel erat. Sed sit amet hendrerit lectus. Mauris iaculis ante nec nulla gravida, ac pharetra mi rutrum. Maecenas lacinia sem vel neque varius bibendum. Morbi laoreet, ligula in maximus laoreet, lacus massa efficitur odio, at ullamcorper mauris leo in odio. Aliquam dignissim purus id elit tempor luctus. Maecenas tincidunt ipsum ac neque interdum, ac scelerisque tellus elementum. Sed tincidunt gravida tellus, sit amet gravida tellus varius id. Mauris ut ex aliquet, ultrices odio at, sodales libero. Pellentesque justo sapien, tempor sed porttitor et, commodo quis lectus. Ut pretium a lacus sed blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed imperdiet molestie quam id interdum.
+
+Nullam id nunc nulla. Phasellus enim lorem, mollis euismod suscipit sit amet, suscipit eget mauris. Fusce pellentesque tincidunt ante quis varius. Suspendisse maximus orci nec vehicula interdum. Nullam nec dignissim quam. Suspendisse vel eleifend enim. Praesent viverra lacus tincidunt augue commodo, vitae fermentum lorem pulvinar. Curabitur sapien nisl, consequat at quam sit amet, porttitor sollicitudin augue. Aenean quis lorem et nisi hendrerit sagittis. Phasellus felis erat, varius vitae porttitor vitae, eleifend nec nibh. Proin ornare lobortis libero, scelerisque varius mauris pulvinar eget.
+
+Sed pellentesque lorem enim, sed dignissim erat feugiat vulputate. Suspendisse venenatis at urna eu maximus. Nunc tempor nisi quis tincidunt volutpat. Aliquam metus dolor, consectetur eget commodo a, rhoncus elementum ex. Nunc placerat quam nec tellus mattis, nec rhoncus massa tincidunt. Sed a sollicitudin lorem, vel venenatis quam. Quisque maximus fermentum cursus. Duis vitae placerat tellus. Sed semper lacus odio, sit amet luctus leo dignissim rhoncus. Etiam iaculis, lectus non varius rhoncus, lorem lacus tincidunt mauris, id egestas tellus enim vel eros. Suspendisse fringilla sagittis sem, sed dapibus ex aliquet in. Donec placerat ultrices finibus. In feugiat tempor tempus. Maecenas velit ex, faucibus nec quam ac, aliquet maximus mi. Suspendisse metus nisl, posuere vel libero nec, laoreet pellentesque velit.
+
+Morbi ut bibendum est, et tincidunt purus. Etiam tristique, lorem quis euismod rutrum, massa arcu rutrum mi, sit amet commodo nibh felis eu leo. Suspendisse potenti. Quisque bibendum est sit amet faucibus posuere. In sem massa, venenatis nec augue eget, placerat tincidunt tellus. Nunc mauris purus, accumsan eu leo ut, luctus blandit ipsum. Aliquam suscipit lectus vitae pretium imperdiet. Duis vestibulum tellus ut neque venenatis, at ornare turpis auctor. Maecenas dapibus lacus ac pretium semper. Sed gravida ac purus quis tincidunt. Nullam mollis cursus nibh, nec ullamcorper leo blandit sit amet. Aenean eleifend fermentum aliquam.
+  </p></div>
+
+</section>
+
+<section class="section-container" id="beef-container">
+<div class="section-header text-center" id="beef-title"><h3> Beef</h3><div>
+<div class="content text-left"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lacinia nunc, non aliquam urna. Nullam aliquet condimentum neque, nec interdum purus tempor sit amet. Sed nec arcu velit. Duis eleifend pharetra porta. In et placerat diam. Nunc ac ligula eu tellus mollis ultrices non sed risus. Praesent sagittis justo eget porttitor accumsan. Nulla accumsan tempus metus, in semper tortor ullamcorper feugiat. Etiam ornare ut magna ut tristique. Mauris et condimentum sem. Cras hendrerit elit volutpat erat placerat, non sodales augue lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec varius leo nunc, sit amet ornare orci elementum in. Integer id massa erat.
+  </p></div>
+
+</section>
+<row>
+</div>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
