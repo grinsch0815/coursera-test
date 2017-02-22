@@ -1,1 +1,95 @@
 
+body{
+
+	background-color:#5C080E;
+}
+
+#header-nav{
+background-color: #84ACCE;
+border-radius:0;
+border:0;
+
+}
+
+.navbar-brand{
+padding-top: 15px;
+
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar-brand h1{
+	font-family: Arial, serif;
+	color: #5C080E;
+	font-size:1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	line-height: 0.75;
+
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+
+	border: 1px solid #5C080E;
+	color: white;
+}
+ .navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:focus    {
+
+	  
+	background-color: yellow;
+}
+ 
+
+#navlist a  {
+	font-size: 1.3em;
+	 
+	color:#5C080E;
+	text-align: center;
+}
+
+hr.visible-xs{
+	border-top: 1px solid white;
+	width: 200px;
+}
+ 
+
+#navlist a:hover  {
+	color: yellow;
+	
+	  
+	 
+}
+
+.section-container{
+	padding-top: 5px;
+	background-color: white;
+	opacity: .6;
+}
+
+#menu-header{
+	
+	color: white;
+	text-shadow: 1px 1px 1px #222;
+}
+
+.content{
+opacity: 1;
+padding: 15px;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }
