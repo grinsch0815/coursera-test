@@ -87,7 +87,9 @@ $ajaxUtils.sendGetRequest(
  /* function(responseText){
     document.querySelector("#main-content").innerHTML=responseText;
   }, */// ***** <---- TODO: STEP 1: Substitute [...] ******
-  true); // Explicitely setting the flag to get JSON from server processed into an object literal
+  true); 
+  console.log(buildAndShowHomeHTML);
+  console.log("++++++++++++++++++++++++++++");/// Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
 
@@ -97,8 +99,10 @@ $ajaxUtils.sendGetRequest(
 function buildAndShowHomeHTML (categories) {
 
   // Load home snippet page
+  console.log(homeHtmlUrl);
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
+
     function (homeHtml) {
 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
@@ -106,8 +110,13 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
        var chosenCategoryShortName = chooseRandomCategory(categories);
        console.log(chosenCategoryShortName.short_name); 
+       var replaceName= chosenCategoryShortName.short_name;
+          
 
-       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName.short_name);
+        replaceName = "'"+replaceName+"'";
+        console.log(replaceName);  
+
+       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", replaceName);
       console.log(homeHtmlToInsertIntoMainPage); 
 
 /*var insertProperty = function (string, propName, propValue) {
@@ -144,8 +153,8 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
       */
-        insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
-     
+        homeHtml=insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+      
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
