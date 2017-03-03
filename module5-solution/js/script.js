@@ -87,13 +87,11 @@ $ajaxUtils.sendGetRequest(
  /* function(responseText){
     document.querySelector("#main-content").innerHTML=responseText;
   }, */// ***** <---- TODO: STEP 1: Substitute [...] ******
-<<<<<<< HEAD
+ 
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
-=======
-  true); 
-  console.log(buildAndShowHomeHTML);
-  console.log("++++++++++++++++++++++++++++");/// Explicitely setting the flag to get JSON from server processed into an object literal
->>>>>>> 5da271383305e2c1d269f695f0c7c01a65a09710
+ 
+   
+ 
 });
 // *** finish **
 
@@ -103,15 +101,12 @@ $ajaxUtils.sendGetRequest(
 function buildAndShowHomeHTML (categories) {
 
   // Load home snippet page
-<<<<<<< HEAD
-  $ajaxUtils.sendGetRequest(
-    homeHtmlUrl,
-=======
+  
   console.log(homeHtmlUrl);
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
 
->>>>>>> 5da271383305e2c1d269f695f0c7c01a65a09710
+ 
     function (homeHtml) {
 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
@@ -119,10 +114,7 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
        var chosenCategoryShortName = chooseRandomCategory(categories);
        console.log(chosenCategoryShortName.short_name); 
-<<<<<<< HEAD
-
-       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName.short_name);
-=======
+      
        var replaceName= chosenCategoryShortName.short_name;
           
 
@@ -130,7 +122,7 @@ function buildAndShowHomeHTML (categories) {
         console.log(replaceName);  
 
        var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", replaceName);
->>>>>>> 5da271383305e2c1d269f695f0c7c01a65a09710
+ 
       console.log(homeHtmlToInsertIntoMainPage); 
 
 /*var insertProperty = function (string, propName, propValue) {
@@ -167,13 +159,10 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
       */
-<<<<<<< HEAD
-        insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
-     
-=======
+
         homeHtml=insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
       
->>>>>>> 5da271383305e2c1d269f695f0c7c01a65a09710
+
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
